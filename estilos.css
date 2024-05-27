@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contenedor {
+    min-height: 100vh;
+    background-color: #262626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculadora {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: black;
+    overflow: hidden;
+    border-radius: 15px;
+    width: 300px;
+    height: 480px;
+    padding: 20px;
+    gap: 10px;
+}
+
+.pantalla {
+    grid-column: 1 / span 4;
+    color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 60px;
+    min-height: 70px;
+}
+
+button {
+    border-radius: 50px;
+    color: white;
+    font-size: 25px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+#cero{
+    grid-column: 1 / span 2;
+}
+
+button#dividir,
+#multiplicar,
+#restar,
+#sumar,
+#igual {
+    background-color: orange;
+}
+
+button#borrar,
+#signo,
+#porcentaje {
+    background-color: #bfbfbf;
+    color: black;
+}
+
+button#uno,
+#dos,
+#tres,
+#cuatro,
+#cinco,
+#seis,
+#siete,
+#ocho,
+#nueve,
+#coma,
+#cero {
+    background-color: #2b2b2b;
+}
+
+button:hover {
+    background-color: white !important;
+    color: black;
+}
